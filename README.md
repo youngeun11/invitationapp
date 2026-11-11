@@ -6,14 +6,15 @@
 
 ## GitHub Actions로 APK 받기
 
-1. 이 저장소를 GitHub에 올립니다.
-2. **Actions** 탭에서 `Build Android APK` 워크플로가 끝날 때까지 기다립니다. 처음 푸시하면 자동 실행됩니다.
-3. 완료된 워크플로를 연 뒤 **Artifacts**에서 다음 파일을 받습니다.
+1. 저장소 **Actions** 탭을 엽니다.
+2. 왼쪽에서 **Build Android APK**를 고릅니다. `pages build and deployment`는 웹 페이지용이라 APK가 없습니다.
+3. 초록색 체크가 붙은 실행 기록을 엽니다. 빨간 X(실패) 실행에는 Artifacts가 없습니다.
+4. 페이지 아래 **Artifacts**에서 다음 파일을 받습니다.
    - `archfest-debug`
    - `archfest-release` (디버그 키로 서명되어 바로 설치 가능)
-4. 압축을 풀고 휴대폰에 `app-debug.apk` 또는 `app-release.apk`를 설치합니다.
+5. 압축을 풀고 휴대폰에 `app-debug.apk` 또는 `app-release.apk`를 설치합니다.
 
-수동으로 다시 빌드하려면 Actions에서 `Build Android APK` → **Run workflow**를 선택하면 됩니다.
+수동으로 다시 빌드하려면 Actions → **Build Android APK** → **Run workflow**를 선택하면 됩니다.
 
 ## 앱 정보
 
